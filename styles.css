@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+}
+
+/* ---------- Start of Clock1 ---------- */
+.clock1 {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+.clock1 p {
+    background-color: blue;
+}
+
+/* ---------- End of Clock1 ---------- */
+
+/* ---------- Start of Clock2 ---------- */
+
+.clock2 {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+
+.clock2 p {
+    background-color: blue;
+}
+
+
+/* ---------- End of Clock2 ---------- */
+
+.hexClock {
+    width: 200px;
+    height: 100px;
+    /* background: #000000; */
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+
+.hexClock p {
+    background-color: blue;
+}
+
+#hexNumber {
+    color: pink;
+}
