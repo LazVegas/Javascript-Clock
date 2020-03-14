@@ -1,18 +1,44 @@
+html {
+    background-color: #ededed;
+}
+
 .container {
-    display: flex;
+    background-color: red;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    border-radius: 25px;
+    box-shadow: 5px 5px 25px 5px #888888;
+    margin: 30px auto;
+    width: 60%;
 }
 
 /* ---------- Start of Clock1 ---------- */
 .clock1 {
-    width: 200px;
-    height: 100px;
-    background-color: black;
-    color: white;
-    margin: 20px;
+    color: #242424;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 40px 0px 20px 0px;
     text-align: center;
 }
+
 .clock1 p {
-    background-color: blue;
+    background-color: #091496;
+    color: white;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 300px;
+}
+
+#clock1 {
+    background-color: #ededed;
+    margin: 0 auto;
+    padding: 20px 0;
+    transition: width 2s;
+    width: 300px;
+}
+
+#clock1:hover {
+    width: 320px;
 }
 
 /* ---------- End of Clock1 ---------- */
@@ -20,34 +46,83 @@
 /* ---------- Start of Clock2 ---------- */
 
 .clock2 {
-    width: 200px;
-    height: 100px;
-    background-color: black;
-    color: white;
-    margin: 20px;
+    color: #242424;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 20px 0px 40px 0px;
     text-align: center;
 }
 
 .clock2 p {
-    background-color: blue;
+    background-color: #091496;
+    color: white;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 300px;
 }
 
+#clock2 {
+    background-color: #ededed;
+    margin: 0 auto;
+    padding: 20px 0;
+    transition: width 2s;
+    width: 300px;
+}
+
+#clock2:hover {
+    width: 320px;
+}
 
 /* ---------- End of Clock2 ---------- */
+.container {
+    margin: 10px auto;
+    width: 80%;
+}
 
-.hexClock {
-    width: 200px;
-    height: 100px;
-    /* background: #000000; */
-    color: white;
-    margin: 20px;
+h1 {
+    background-color: #ededed;
+    color: #242424;
+    font-size: 30px;
+    font-weight: bold;
     text-align: center;
+
+    position: relative;
+    animation-name: slide-h1;
+    animation-duration: 4s;
 }
 
-.hexClock p {
-    background-color: blue;
+#message {
+    background-color: #ededed;
+    color: #242424;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+
+    position: relative;
+    animation-name: slide-message;
+    animation-duration: 4s;
 }
 
-#hexNumber {
-    color: pink;
+@keyframes slide-h1 {
+  0%   {left:-100px;}
+  50%  {left:100px;}
+  100% {left:0px;}
+}
+
+@keyframes slide-message {
+    0%   {left:100px;}
+    50%  {left:-100px;}
+    100% {left:0px;}
+  }
+
+@media screen and (max-width: 900px) {
+    h1 {
+        background-color: #ededed;
+        font-size: 14px;
+    }
+    #message {
+        background-color: #ededed;
+        font-size: 12px;
+    }
 }
